@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets'
+import Icon from '$components/Icon.astro'
+import img01 from '$assets/images/img-01.webp'
+import img02 from '$assets/images/img-02.webp'
+import img03 from '$assets/images/img-03.webp'
+---
+
+<section class="bg-gradient-to-b from-[#F5E79B] to-[#DAF6E9] py-24">
+	<div class="container">
+		<div class="grid items-center gap-12 lg:grid-cols-2 xl:gap-24">
+			<div>
+				<Image class="animate-parallax-t mix-blend-multiply" src={img01} width={744} quality={90} densities={[2]} alt="" />
+			</div>
+			<div class="reveal">
+				<p class="max-w-[26rem] reveal:translate-x-24 reveal:opacity-0">Un buen plan tiene que cumplir con algunos básicos. Que sea una actividad entretenida es uno de ellos, pero podemos pedirles más cosas como que nos sorprendan por romper moldes o que nos ayuden a <strong>conectar con nuestro lado innovador y creativo liberándonos</strong>. Y esto que le pedimos a cualquier plan es lo mismo que buscamos en nuestro compañero de viaje. Ahí, <strong>el Nuevo Nissan Qashqai</strong> con su diseño atrevido, su tecnología híbrida avanzada y sus 10 años de garantía es el mejor aliado para disfrutar de cualquier escapada.</p>
+			</div>
+		</div>
+		<div class="grid items-center max-lg:mt-12 lg:grid-cols-2">
+			<div class="animate-parallax-b grid grid-cols-2 lg:order-2">
+				<div class="xl:-ml-24">
+					<Image src={img02} width={552} quality={90} densities={[2]} alt="" />
+				</div>
+				<div class="xl:-ml-6">
+					<Image src={img03} width={444} quality={90} densities={[2]} alt="" />
+				</div>
+			</div>
+			<div class="reveal mt-12 xl:mt-24">
+				<div class="reveal:-translate-x-24 reveal:opacity-0">
+					<h3 class="relative max-w-[21rem] font-rubanok text-3xl">
+						<Icon class="absolute bottom-0 left-0 w-full text-[#B4F8B6]" name="fig-1" />
+						<span class="relative">A continuación, te presentamos una selección de planes perfectos para disfrutar en septiembre:</span>
+					</h3>
+					<Icon class="mx-auto mt-12 w-12" name="arrow-2" />
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

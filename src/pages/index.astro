@@ -1,0 +1,58 @@
+---
+import Layout from '$layouts/Layout.astro'
+import Icon from '$components/Icon.astro'
+import SectionA from '$components/SectionA.astro'
+import SectionB from '$components/SectionB.astro'
+import SectionC from '$components/SectionC.astro'
+import SectionD from '$components/SectionD.astro'
+import SectionE from '$components/SectionE.astro'
+import SectionF from '$components/SectionF.astro'
+import SectionG from '$components/SectionG.astro'
+import img04 from '$assets/images/img-04.webp'
+import img05 from '$assets/images/img-05.webp'
+import img09 from '$assets/images/img-09.webp'
+import img10 from '$assets/images/img-10.webp'
+import img11 from '$assets/images/img-11.webp'
+import img12 from '$assets/images/img-12.webp'
+---
+
+<Layout>
+	<SectionA />
+
+	<SectionB />
+
+	<SectionC />
+
+	<SectionD class="from-[#B7ABE6] to-[#EEFFD9]" image1={img04} image2={img05} color="text-[#EEF536]" title="Surf en La Zurriola: desafiando las olas en San Sebastián">
+		<Icon slot="fig" class="absolute left-0 top-0 w-full text-[#B4F8B6]" name="fig-2" />
+		<Fragment slot="body">
+			<p class="mb-6 -rotate-6 font-playzone text-2xl xl:mb-20">Para los amantes del mar y la adrenalina, San Sebastián ofrece la oportunidad perfecta para enfrentarse a las olas en la Playa de La Zurriola.</p>
+			<p>Surfear en La Zurriola te invita a experimentar una conexión única con la naturaleza, a la vez que te empuja a superarte en tus propios retos, al igual que tu compañero perfecto para esta aventura: el <strong>Nuevo Nissan Qashqai</strong>, con el que superar los límites de la innovación con su motorización híbrida y su <strong>tecnología e-POWER</strong>. ¿Te apuntas?</p>
+		</Fragment>
+		<p slot="box">Esta playa es conocida por ser un punto de referencia para el surf en el País Vasco, es ideal para quienes buscan desafiar sus límites físicos en un entorno natural impresionante.</p>
+	</SectionD>
+
+	<SectionE />
+
+	<SectionD class="from-[#B4F2E4] to-[#EEFFDA]" image1={img09} image2={img10} color="text-[#B4F8B6]" title="Exposiciones inmersivas Sorolla (Valencia) y Dalí (Madrid, Barcelona y Valencia)">
+		<Icon slot="fig" class="absolute -top-3 left-0 -ml-6 w-full text-[#B4F8B6]" name="fig-5" />
+		<Fragment slot="body">
+			<p>Valencia sigue siendo un epicentro cultural en septiembre con la exposición inmersiva "Sorolla: una nueva dimensión" y “Dalí Cibernético. Arte, ciencia y tecnología”. Estas dos muestras no son solo exposiciones de arte tradicional; se tratan de experiencias que te sumergen en la mente del artista combinando espacios interactivos y obras de arte digitalizadas en alta resolución.</p>
+			<p>En estas aventuras, los visitantes pueden conectar de una forma más personal con las obras de Sorolla y su legado al futuro o la mayor sala de metaverso de España con Dalí. Formas que se alinean con el Nuevo Nissan Qashqai, con el que podrás disfrutar de una <strong>conducción más personalizada y cómoda a través de la selección de accesorios</strong> que ha diseñado Nissan. Elige entre el pack explorador o el pack deportivo y redefine el estilo de tu crossover.</p>
+		</Fragment>
+		<p slot="box">El <a class="underline decoration-2" href="https://www.nissan.es/vehiculos/nuevos-vehiculos/qashqai.html">Nuevo Nissan Qashqai</a>, redefine el estilo con su icónico rediseño, como Sorolla y Dalí, que llevan la apreciación del arte a otro nivel, mezclando tecnología y creatividad para ofrecer experiencias que desafían lo convencional.</p>
+	</SectionD>
+
+	<SectionD class="from-[#C5EAA8] to-[#FCECD8]" image1={img11} image2={img12} color="text-[#FBBAEC]" title="Subida al Pico de las Nieves: aventura en la cumbre de Gran Canaria">
+		<Icon slot="fig" class="absolute left-0 top-0 -ml-6 w-3/4 text-[#EEF536]" name="fig-6" />
+		<Fragment slot="body">
+			<p>Septiembre es un mes ideal para explorar la naturaleza, y qué mejor manera de hacerlo que explorando nuevos horizontes en una subida al Pico de las Nieves en Gran Canaria. Este es el punto más alto de la isla y ofrece vistas espectaculares que te dejarán sin aliento.</p>
+			<p>Recorre la isla de norte a sur con el Nuevo Nissan Qashqai, tu aliado perfecto que te permite viajar tan lejos como te propongas gracias a su tracción en dos o cuatro ruedas y <strong>ahorrando en tu consumo a través de su tecnología e-POWER</strong>, que cuenta con la etiqueta ECO para no tener restricciones de acceso a las zonas de bajas emisiones.</p>
+		</Fragment>
+		<p slot="box">El Nuevo Nissan Qashqai te invita a vivir esta aventura disfrutando de lo mejor de la naturaleza, con un desafío que te recompensa con paisajes inolvidables y etiqueta ECO gracias a su tecnología e-POWER.</p>
+	</SectionD>
+
+	<SectionF />
+
+	<SectionG />
+</Layout>

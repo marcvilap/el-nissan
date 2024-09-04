@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets'
+import bg02 from '$assets/images/bg-02.webp'
+---
+
+<section class="relative flex min-h-156 items-center bg-black py-24 text-white">
+	<Image class="animate-parallax-scale absolute left-0 top-0 size-full object-cover opacity-30" src={bg02} width={1920} quality={90} densities={[2]} alt="" />
+	<div class="reveal container relative text-center">
+		<h2 class="mb-12 font-rubanok text-5xl reveal:translate-y-24 reveal:opacity-0 xl:text-6xl">Nuevo Nissan Qashqai:<br />preparado para cualquier desafío</h2>
+		<p class="mx-auto max-w-[37rem] reveal:translate-y-24 reveal:opacity-0 revealed:delay-100">Este septiembre, aprovecha las últimas semanas de calor para explorar <strong>nuevos horizontes</strong>. Así como estos eventos redefinen nuestras expectativas de lo que una experiencia puede ser, el nuevo Nissan Qashqai nos adentra en un mar de sensaciones y nuevas aventuras.</p>
+	</div>
+</section>

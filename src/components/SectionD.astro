@@ -1,0 +1,41 @@
+---
+import { Image } from 'astro:assets'
+import Icon from '$components/Icon.astro'
+
+interface Props {
+	class?: string
+	title: string
+	image1: ImageMetadata
+	image2: ImageMetadata
+	color: string
+}
+
+const { class: className, title, image1, image2, color } = Astro.props
+---
+
+<section class:list={['bg-gradient-to-b py-24', className]}>
+	<div class="container grid gap-12 lg:grid-cols-2 xl:gap-24">
+		<div>
+			<h2 class="relative mb-6 font-rubanok text-5xl">
+				<slot name="fig" />
+				<span class="relative block -rotate-6">{title}</span>
+			</h2>
+			<div class="mb-6 mt-12 grid max-w-[26rem] gap-6">
+				<slot name="body" />
+				<Icon class="relative z-10 mx-auto w-16 -translate-x-12" name="arrow-3" />
+			</div>
+			<Image class="animate-parallax-b" src={image1} width={744} quality={90} densities={[2]} alt="" />
+		</div>
+		<div>
+			<Image class="animate-parallax-t mb-12 xl:mb-24" src={image2} width={744} quality={90} densities={[2]} alt="" />
+			<div class="relative">
+				<Icon class:list={['mix-blend-multiply', color]} name="fig-3" />
+				<div class="reveal container-inline-size absolute inset-0">
+					<div class="absolute inset-x-[12cqw] bottom-[27cqw] top-[8cqw] flex items-center font-rubanok text-[5cqw] leading-snug reveal:scale-90 reveal:opacity-0">
+						<slot name="box" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
