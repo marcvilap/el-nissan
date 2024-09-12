@@ -12,6 +12,7 @@ export default {
 				sans: ['Founders Grotesk', 'sans-serif'],
 				playzone: ['Playzone', 'sans-serif'],
 				rubanok: ['Rubanok', 'sans-serif'],
+				signika: ['Signika', 'sans-serif'],
 			},
 			spacing: Object.fromEntries([...Array(70).keys()].slice(17).map(val => [val * 4, `${val}rem`])),
 			transitionDelay: Object.fromEntries([...Array(20).keys()].map(val => [val * 50, `${val * 50}ms`])),

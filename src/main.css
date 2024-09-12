@@ -31,6 +31,47 @@
 		font-display: swap;
 		src: url(./assets/fonts/rubanok-regular.woff2) format('woff2');
 	}
+
+	@font-face {
+		font-family: 'Signika';
+		font-style: normal;
+		font-weight: 100;
+		font-display: swap;
+		src: url(./assets/fonts/Signika-Light.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Signika';
+		font-style: normal;
+		font-weight: 200;
+		font-display: swap;
+		src: url(./assets/fonts/Signika-Regular.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Signika';
+		font-style: normal;
+		font-weight: 300;
+		font-display: swap;
+		src: url(./assets/fonts/Signika-Medium.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Signika';
+		font-style: normal;
+		font-weight: 400;
+		font-display: swap;
+		src: url(./assets/fonts/Signika-SemiBold.woff2) format('woff2');
+	}
+
+	@font-face {
+		font-family: 'Signika';
+		font-style: normal;
+		font-weight: 500;
+		font-display: swap;
+		src: url(./assets/fonts/Signika-Bold.woff2) format('woff2');
+	}
+
 	@media (max-width: 400px) {
 		html {
 			font-size: 4vw;
